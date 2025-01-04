@@ -1,0 +1,86 @@
+mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  // Space between form fields
+    padding: 16px; // Padding for content
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;  // Space between form sections
+  }
+  
+  mat-form-field {
+    width: 100%;  // Ensure each form field spans the full width
+  }
+  
+  mat-dialog-actions {
+    display: flex;
+    justify-content: center;  // Center the buttons horizontally
+    gap: 16px;  // Space between buttons
+    padding: 16px;  // Padding around the buttons
+  }
+  
+  button {
+    width: auto;  // Ensure buttons are only as wide as their content
+  }
+  
+  @media (max-width: 600px) {
+    mat-dialog-content {
+      padding: 16px;
+    }
+  
+    mat-form-field {
+      width: 100%;  // Full-width on smaller screens
+    }
+  }
+  
+  @media (max-width: 400px) {
+    mat-dialog-title {
+      font-size: 18px;  // Adjust font size for the title
+    }
+  
+    mat-form-field {
+      margin-bottom: 12px;  // Reduce bottom margin for smaller screens
+    }
+  
+    mat-dialog-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  // Center the buttons vertically
+      gap: 8px;  // Space out buttons vertically on small screens
+      padding: 8px;  // Reduce padding to save space on smaller screens
+    }
+  }
+  
+  .task-title-description {
+    display: flex;
+    gap: 16px;  // Space between title and description fields
+    width: 100%;
+  }
+  
+  .task-title-description mat-form-field {
+    width: 48%;  // Make form fields take up 50% of the space each, leaving some space in between
+  }
+  
+  .priority-status {
+    display: flex;
+    gap: 16px;  // Space between priority and status fields
+    width: 100%;
+  }
+  
+  .priority-status mat-form-field {
+    width: 48%;  // Make form fields take up 50% of the space each
+  }
+  
+  @media (max-width: 600px) {
+    .task-title-description, .priority-status {
+      flex-direction: column;  // Stack fields vertically on small screens
+    }
+  
+    .task-title-description mat-form-field, .priority-status mat-form-field {
+      width: 100%;  // Make form fields full width on smaller screens
+    }
+  }
+  
