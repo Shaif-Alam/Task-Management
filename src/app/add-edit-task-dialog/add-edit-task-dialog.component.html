@@ -1,0 +1,39 @@
+<h2 mat-dialog-title>{{ data ? 'Edit' : 'Add' }} Task</h2>
+
+<mat-dialog-content>
+  <form>
+    <div class="task-title-description">
+      <mat-form-field appearance="fill">
+        <mat-label>Task Title</mat-label>
+        <input matInput [(ngModel)]="task.title" name="title" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Task Description</mat-label>
+        <textarea matInput [(ngModel)]="task.description" name="description"></textarea>
+      </mat-form-field>
+    </div>
+
+    <div class="priority-status">
+      <mat-form-field appearance="fill">
+        <mat-label>Priority</mat-label>
+        <mat-select [(ngModel)]="task.priority" name="priority">
+          <mat-option *ngFor="let priority of priorityOptions" [value]="priority">{{ priority }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Status</mat-label>
+        <mat-select [(ngModel)]="task.status" name="status">
+          <mat-option *ngFor="let status of statusOptions" [value]="status">{{ status }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </form>
+</mat-dialog-content>
+
+
+<mat-dialog-actions>
+  <button mat-flat-button color="warn" (click)="closeDialog()">Cancel</button>
+  <button mat-flat-button color="primary" color="primary" (click)="saveTask()">Save</button>
+</mat-dialog-actions>
