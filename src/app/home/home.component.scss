@@ -1,0 +1,81 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    overflow: hidden;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .h-100 {
+    height: 100vh;
+  }
+  
+  .header {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    // background-color: black;
+  }
+  
+  .main {
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, black, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    color: white;
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 128px;
+    font-weight: bold;
+    position: relative;
+    letter-spacing: 4%;
+  }
+  
+  h3::after {
+    content: "";
+    display: block;
+    width: 80%; /* Adjust width as needed */
+    border-bottom: 25px dotted rgb(255, 255, 255); /* Dotted underline */
+    position: absolute;
+    bottom: -90px; /* Adjust space between text and line */
+    left: 15%; /* Centered dynamically */
+  }
+  
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    // font-weight: bold;
+    // font-family: inter;
+    letter-spacing: 3%;
+  }
+  
+  h4 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+
+  .bg-color{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+  h6{
+     margin-top: 30%;
+    //  padding-left: 60%;
+    font-size: 16px;
+    text-transform: capitalize;
+     width: 100%;
+     line-height: 30px;
+  }

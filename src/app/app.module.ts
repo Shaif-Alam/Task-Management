@@ -15,12 +15,17 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './home/home.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskListComponent,
     AddEditTaskDialogComponent,
+    HomeComponent,
+    HeaderComponent,
    
   ],
   imports: [
@@ -36,7 +41,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
