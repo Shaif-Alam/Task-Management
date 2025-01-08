@@ -18,7 +18,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
-
+import {MatDividerModule} from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,8 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     MatButtonModule ,
+    MatDividerModule,
+    MatMenuModule,
     MatDialogModule,
     MatSnackBarModule,
     MatInputModule ,
