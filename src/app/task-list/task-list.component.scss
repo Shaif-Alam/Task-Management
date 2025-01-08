@@ -1,61 +1,112 @@
 .filter-and-button-container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-padding-left: 10px;
-padding-right: 10px;
-    justify-content: space-between;
-  }
-  
-  mat-form-field {
-    margin: 0;
-    flex-grow: 1; /* Ensures the mat-form-field takes up available space */
-  }
-  
-  button {
-    margin: 0;
-  }
-  
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
 
-  .description-cell {
-    white-space: nowrap;        
-    overflow: hidden;       
-    text-overflow: ellipsis;    
-    max-width: 150px;           
-  }
-  .status-pending {
-    color: orange; 
-  }
-  
-  .status-in-progress {
-    color: blue;    
-  
-  }
-  
-  .status-completed {
-    color: green;  
-    
-  }
-  
-  
-  h1{
-     text-align: center;
-    font-weight:600;
-  }
+}
 
-  .padding{
-     padding-top: 20px;
-  }
+mat-form-field {
+  margin: 0;
+  flex-grow: 1;
+  /* Ensures the mat-form-field takes up available space */
+}
 
-  .task-cell {
-    white-space: nowrap;        
-    overflow: hidden;       
-    text-overflow: ellipsis;    
-    max-width: 150px;           
-  }
-  .status-cell {
-    white-space: nowrap;        
-    overflow: hidden;       
-    text-overflow: ellipsis;    
-    max-width: 150px;           
-  }
+button {
+  margin: 0;
+}
+
+mat-card {
+  background: #000428;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428);
+}
+
+.description-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.status-pending {
+  color: orange;
+}
+
+.status-in-progress {
+  color: blue;
+}
+
+.status-completed {
+  color: green;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+}
+.padding {
+  padding-top: 20px;
+}
+.task-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+.status-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+.header {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  background: #000428;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428);
+}
+h4 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  // font-weight: bold;
+  // font-family: inter;
+  letter-spacing: 3%;
+}
+
+.bg-color{
+
+  background: #000428;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428);
+}
+mat-divider{
+  background-color: white;
+}
+
+
+.description-ellipsis {
+  max-height: 150px; /* Set the maximum height for the paragraph */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  white-space: normal; /* Allow text wrapping */
+  text-overflow: ellipsis; /* Ensure ellipsis for long text */
+  padding-right: 4px; /* Add padding for scrollbar spacing */
+}
