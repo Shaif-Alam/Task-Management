@@ -20,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatMenuModule} from '@angular/material/menu';
+import { NotFoundComponent } from './not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import {MatMenuModule} from '@angular/material/menu';
     AddEditTaskDialogComponent,
     HomeComponent,
     HeaderComponent,
+    NotFoundComponent,
    
   ],
   imports: [
